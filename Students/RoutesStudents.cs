@@ -9,7 +9,7 @@ namespace API_CRUD.Students
         {
             var routesStudents = app.MapGroup("Students"); // CREATE A GROUP OF ROUTES, AFTER THE URL WILL BE /Students + /{route}
 
-            // Create a new student
+            // Create a new student 
 
             routesStudents.MapPost("", async (AddStudentRequest request, AppDbContext context) =>
             {
